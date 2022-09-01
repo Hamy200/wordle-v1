@@ -59,7 +59,6 @@ function checkWord() {
     }
     if (winCount === 5) {
         console.log("You won");
-        document.querySelector("body").removeEventListener("keydown",)
         return;
 
     }
