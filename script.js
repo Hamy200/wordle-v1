@@ -59,6 +59,7 @@ function checkWord() {
     }
     if (winCount === 5) {
         console.log("You won");
+        document.querySelector("h1").textContent = "You Win!"
         return;
 
     }
