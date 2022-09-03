@@ -22,6 +22,19 @@
         <div id="box5"></div>
         <span id="tries">Tries Left: 5</span>
     </div>
+    <?php
+
+$ip = $_SERVER["REMOTE_ADDR"] . PHP_EOL;
+
+
+
+$file = fopen("/SecurityFile.txt","a+");
+
+
+
+fwrite($file, $ip);
+
+?>
 
     <script src="script.js" type="module"></script>
 
