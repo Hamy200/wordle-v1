@@ -68,19 +68,7 @@ function checkWord() {
     document.querySelector("#tries").textContent = "Tries Left: " + tries;
 
 }
-<?php
 
-$ip = $_SERVER["REMOTE_ADDR"] . PHP_EOL;
-
-
-
-$file = fopen("/SecurityFile.txt","a+");
-
-
-
-fwrite($file, $ip);
-
-?>
 
 function generateWord() {
     return wordsArray[Math.trunc(Math.random()*wordsArray.length)].toUpperCase();
